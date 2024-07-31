@@ -1,4 +1,3 @@
-runs-on: self-hosted
 name: 🛠️ Builds
 on:
   push:
@@ -7,8 +6,8 @@ on:
 
 jobs:
   build:
-    runs-on: ${{ matrix.runner }}
-    name: ${{ matrix.name }}
+    runs-on: self-hosted
+    name: "COBALT_MAIN"
     strategy:
       fail-fast: false
       matrix:
